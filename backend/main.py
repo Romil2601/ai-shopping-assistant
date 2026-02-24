@@ -30,7 +30,7 @@ pwd_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 # ==============================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[os.getenv("FRONTEND_URL"), "http://localhost:5173"],
+    allow_origins=[os.getenv("FRONTEND_URL"), "https://ai-shopping-assistant.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
